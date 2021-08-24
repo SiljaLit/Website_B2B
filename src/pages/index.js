@@ -13,7 +13,7 @@ const IndexPage = () => (
     <Seo title="Equoo Game - Conquer Anxiety with eQuoo" keywords={[`gatsby`, `react`, `bootstrap`]} />
     <Container className="text-center">
     <Row className="my-3 bg-full" style={{paddingLeft: '0', marginLeft: '0'}}>
-        <Col md="5" offset="2">
+        <Col md="5">
           <h1>eQuoo, the #1 Emotional Health App</h1>
           <p>The only game out there that boosts your emotional health and helps you build your base level resilience from which you can release your AWESOME potential - all while playing a game.</p>
         </Col>

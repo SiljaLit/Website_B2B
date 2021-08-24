@@ -31,3 +31,15 @@ span#nav-items.active {
 span#nav-items:hover {
   color: #D0D0D0;
 }
+
+@media (min-width:768px){
+  .navbar-brand {
+    padding-left: 15%;
+  }
+}
+
+@media (min-width:1080px){
+  .navbar-brand {
+    padding-left: 30%;
+  }
+}
