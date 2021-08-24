@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Navbar, Nav, Button, Col, Row } from "react-bootstrap"
+import { Navbar, Nav, Col, Row } from "react-bootstrap"
 
 import logo from "../images/sprite_logo_equoo.png"
 import android_store from "../images/android.png"
@@ -14,7 +14,7 @@ const CustomNavbar = ({ pageInfo }) => {
     <Navbar variant="dark" expand="lg" id="site-navbar">
         {/* <Container> */}
         <Link to="/" className="link-no-style">
-          <Navbar.Brand as="span">
+          <Navbar.Brand as="span" className="mx-auto">
             <img src={logo} alt="equoo logo" className="navbar-logo"></img>
           </Navbar.Brand>
         </Link>

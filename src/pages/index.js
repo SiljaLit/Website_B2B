@@ -12,12 +12,12 @@ const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
     <Seo title="Equoo Game - Conquer Anxiety with eQuoo" keywords={[`gatsby`, `react`, `bootstrap`]} />
     <Container className="text-center">
-    <Row className="justify-content-center my-3 bg-full">
-        <Col md="4" offset="2">
+    <Row className="my-3 bg-full" style={{paddingLeft: '0', marginLeft: '0'}}>
+        <Col md="5" offset="2">
           <h1>eQuoo, the #1 Emotional Health App</h1>
           <p>The only game out there that boosts your emotional health and helps you build your base level resilience from which you can release your AWESOME potential - all while playing a game.</p>
         </Col>
-        <Col md="6">
+        <Col md="7">
         </Col>
       </Row>
       <Row className="justify-content-center my-3 bg-white">
