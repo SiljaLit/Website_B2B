@@ -1,0 +1,44 @@
+h1 {
+    font-size: 29px;
+    text-align: left;
+}
+
+p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.bg-full {
+    position: relative;
+  }
+  
+  .bg-full:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX( -50%);
+    height: 100%;
+    width: 100vw;
+    background: #E0E0E0;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+
+  .bg-white {
+    position: relative;
+    padding: 2%;
+  }
+  
+  .bg-white:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX( -50%);
+    height: 100%;
+    width: 100vw;
+    background: #ffffff;
+  }

@@ -1,0 +1,33 @@
+#site-navbar {
+  background-color: $color-primary;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  width: 128px;
+  height: 57px;
+  padding: 0%;
+  margin: 0%;
+  float: left;
+}
+
+.store-logo {
+  width: 67px;
+  height: 20px;
+  align-items: center;
+}
+
+#nav-items {
+  color: black;
+}
+
+span#nav-items.active {
+  color: #808080;
+}
+
+span#nav-items:hover {
+  color: #D0D0D0;
+}
