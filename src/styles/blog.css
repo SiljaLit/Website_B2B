@@ -1,0 +1,20 @@
+.blog-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  .blog-li {
+    float: left;
+    padding-right: 5%;
+  }
+
+  .blog-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  

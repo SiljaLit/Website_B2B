@@ -1,0 +1,15 @@
+.about-main-image {
+    height: 512px;
+    width: 100%;
+}
+
+.about-main-image-small {
+    height: 185px;
+    width: 120px;
+}
+
+@media (max-width:768px){
+    #game-details {
+      padding-top: 15px;
+    }
+  }

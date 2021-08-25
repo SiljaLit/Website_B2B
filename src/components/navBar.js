@@ -31,8 +31,8 @@ const CustomNavbar = ({ pageInfo }) => {
                 About Equoo
               </Nav.Link>
             </Link>
-            <Link to="/about-equoo" className="link-no-style" style={{width: '150px'}}>
-              <Nav.Link id="nav-items" as="span" eventKey="about-equoo">
+            <Link to="/clinical-research" className="link-no-style" style={{width: '150px'}}>
+              <Nav.Link as="span" eventKey="clinical-research" id="nav-items">
                 Clinical Research
               </Nav.Link>
             </Link>

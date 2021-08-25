@@ -3,6 +3,10 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col, Button } from "react-bootstrap"
 
+import { Link } from "gatsby"
+
+import {navigate} from 'gatsby';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faInstagram,
@@ -45,23 +49,34 @@ const Layout = ({ children, pageInfo }) => (
         </Container>
         <Container fluid>
         <Row className="justify-content-center" style={{paddingBottom: '70px'}}>
-          <Col md="4" className="ml-auto">
-            <ul style={{color: "gray"}}>
+          <Col md={{ span: 8, offset: 2 }}>
+            <Row>
+              <Col md="6">
+              <ul style={{color: "gray"}}>
+            <Link to="/team" className="link-no-style">
               <li>Team</li>
+            </Link>
+            <Link to="/blog" className="link-no-style">
               <li>Blog</li>
+            </Link>
+            <Link to="/letter-from-founder" className="link-no-style">
               <li>Letter from Founder</li>
+            </Link>
             </ul>
-          </Col>
-          <Col md="4" className="ml-auto">
-            <h1 style={{color: "gray"}}>Any Questions?</h1>
-            <Button>Contact Us</Button>
-          </Col>
+              </Col>
+              <Col md="6">
+              <h1 style={{color: "gray"}}>Any Questions?</h1>
+            <Button  onClick={()=>{navigate("/contact-us")}}>Contact Us</Button>
+              </Col>
+            </Row>
+          </Col> 
           </Row>
         </Container >
         <Container fluid className="px-0">
-          <Row noGutters>
+          <Row noGutters >
             <Col className="footer-col">
               <footer>
+                <Row>
                 <span>
                 <a style={{paddingRight: "20px"}} href='https://www.instagram.com/equoogame/?hl=en' target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faInstagram} size="2x" style={{color: "gray"}}/>
@@ -79,6 +94,7 @@ const Layout = ({ children, pageInfo }) => (
                   <FontAwesomeIcon icon={faLinkedin} size="2x" style={{color: "gray"}}/>
                 </a>
                 </span>
+                </Row>
               </footer>
             </Col>
           </Row>
